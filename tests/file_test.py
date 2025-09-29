@@ -10,7 +10,7 @@ def test_calc_addition():
 
 def test_calc_substraction():
 
-  # Fonction test du résultat de 2-4
+    # Fonction test du résultat de 2-4
 
     output = 2-4
 
@@ -19,7 +19,7 @@ def test_calc_substraction():
 
 def test_calc_multiply():
 
-  # Fonction test du résultat de 2*4
+    # Fonction test du résultat de 2*4
 
     output = 2*4
 
@@ -28,7 +28,7 @@ def test_calc_multiply():
 
 def test_coucou():
 
-  # Fonction test si la résultat renvoie 'hello'
+    # Fonction test si la résultat renvoie 'hello'
 
     output='hello'
 
