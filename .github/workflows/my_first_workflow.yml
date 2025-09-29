@@ -18,7 +18,7 @@ jobs:
 
       - name: echo a string
 
-        run: echooo "Hello world"
+        run: echo "Hello world"
 
       - name: multiline script
 
