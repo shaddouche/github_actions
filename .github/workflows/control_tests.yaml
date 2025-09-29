@@ -1,4 +1,4 @@
-name: Pytest & flake8 control Push
+name: Control Push
 
 on: push
 
@@ -10,39 +10,38 @@ jobs:
 
     runs-on: ubuntu-24.04
 
-steps:
+    steps:
 
-  - name: Checkout on master
+      - name: Checkout on master
 
-    uses: actions/checkout@v3
-
-
-  - name: Set up Python
-
-    uses: actions/setup-python@master
-
-    with:
-
-      python-version: "3.x"
-
-- name: Install pytest and flake8
-
-  run: |
-
-    pip install pytest
-
-    pip install flake8
+        uses: actions/checkout@v3
 
 
-- name: Run tests
+      - name: Set up Python
 
-  run: |
+        uses: actions/setup-python@master
 
-    pytest
+        with:
 
-
-- name: Run flake8
-
-  uses: py-actions/flake8@v2
+          python-version: "3.x"
 
 
+      - name: Install pytest and flake8
+
+        run: |
+
+          pip install pytest
+
+          pip install flake8
+
+
+      - name: Run tests
+
+        run: |
+
+          pytest
+
+
+      - name: Run flake8
+
+        uses: py-actions/flake8@v2
